@@ -1,0 +1,213 @@
+/* do not add "::before" pseudo element here because font awesome is using it */
+*,
+::after {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#page-heading {
+  margin-bottom: 15px;
+}
+.bg-transparent {
+  background-color: transparent;
+}
+
+.list-main-container {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
+}
+.list-main-container > h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8;
+}
+
+.list-main-container li {
+  width: 100%;
+  text-align: center;
+  background-color: #e8511f;
+  color: white;
+  list-style-type: none;
+  cursor: pointer;
+  transition: 300ms;
+  margin: 0px;
+}
+.list-main-container li:hover {
+  background-color: #ffb49b;
+  color: black;
+}
+.list-main-container li > a {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+}
+.products-table {
+  width: 100%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.theading > #th-row {
+  font-size: 12px;
+  color: #e5e7eb;
+  text-transform: uppercase;
+  background-color: #3f3f46;
+  text-align: center;
+}
+.theading th {
+  padding: 12px 24px;
+}
+
+.products-table > tbody > tr {
+  background-color: #f5f5f4;
+  text-align: center;
+  color: #374151;
+  transition: 200ms;
+}
+.products-table > tbody > tr:hover {
+  background-color: #c4c4c3;
+}
+
+.products-table > tbody > tr:nth-child(odd) {
+  background-color: #e2e8f0;
+  color: #1c1917;
+  transition: 200ms;
+}
+.products-table > tbody > tr:nth-child(odd):hover {
+  background-color: #c1c6cc;
+}
+.action-btn {
+  color: inherit;
+}
+.action-btns-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-table > tbody > tr > td {
+  padding: 16px 24px;
+}
+#main-data-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-inline: 40px;
+  gap: 40px;
+}
+.subCategory-img {
+  width: 100%;
+}
+
+#table-container {
+  width: 45%;
+}
+.img-container {
+  width: 45%;
+}
+
+.bread-crumb-container {
+  padding: 40px 10px 60px 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.bread-crumbs {
+  display: inline-flex;
+  flex-direction: row;
+}
+.bread-crumbs > a {
+  text-decoration: none;
+  color: #374151;
+  transition-duration: 200ms;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+}
+.bread-crumbs > a:hover {
+  color: #2563eb;
+}
+#list-container {
+  display: flex;
+  width: 50%;
+  max-width: 400px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .products-table th {
+    display: none;
+  }
+  .products-table > tbody > tr > td {
+    padding: 16px 24px;
+  }
+  .products-table > tbody > tr > td {
+    text-align: start;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 30% 1fr;
+  }
+  .products-table > tbody > tr {
+    padding: 80px;
+  }
+  .products-table > tbody > tr > td:first-child {
+    padding-top: 30px;
+  }
+  .products-table > tbody > tr > td:last-child {
+    padding-bottom: 40px;
+  }
+  .products-table > tbody > tr > td:nth-of-type(1)::before {
+    font-weight: 700;
+    content: "Ref";
+  }
+  .products-table > tbody > tr > td:nth-of-type(2)::before {
+    font-weight: 700;
+    content: "Part Number";
+  }
+
+  .products-table > tbody > tr > td:nth-of-type(3)::before {
+    font-weight: 700;
+    content: "Description";
+  }
+  .products-table > tbody > tr > td:nth-of-type(4)::before {
+    font-weight: 700;
+    content: "Contact us";
+  }
+
+  .action-btns-container {
+    justify-content: start;
+  }
+
+  #main-data-container {
+    flex-direction: column;
+    padding-inline: 30px;
+  }
+  #table-container {
+    width: 100%;
+  }
+  .img-container {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  #list-container {
+    width: 100%;
+  }
+}

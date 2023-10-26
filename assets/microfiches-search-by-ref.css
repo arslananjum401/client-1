@@ -1,0 +1,8 @@
+.products-table-container {
+  width: 100%;
+}
+.products-table-container .searched-products-table {
+  width: 100%;
+  max-width: none;
+  border-collapse: collapse;
+}

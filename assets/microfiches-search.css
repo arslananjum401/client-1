@@ -1,0 +1,51 @@
+.microfiches-search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 17px;
+}
+.microfiches-search-container > div > a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 28px;
+  text-align: center;
+}
+.microfiches-search-container > div {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #ef711a;
+  justify-content: center;
+  height: 200px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  color: white;
+  transition-duration: 200ms;
+}
+.microfiches-search-container > div:hover {
+  border: 3px solid #ef711a;
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .microfiches-search-container > div > a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 485px) {
+  .microfiches-search-container {
+    flex-direction: column;
+  }
+  .microfiches-search-container > div {
+    width: 80%;
+  }
+  .microfiches-search-container > div > a {
+    font-size: 25px;
+  }
+}
